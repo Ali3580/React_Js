@@ -114,28 +114,6 @@ const cdata = [
         icon3: <MdLocationPin />,
         location: "Lahore, Pakistan",
     },
-    
 ];
 
 export default cdata;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

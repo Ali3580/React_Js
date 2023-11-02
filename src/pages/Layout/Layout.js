@@ -9,7 +9,10 @@ const Layout = () => {
       <nav>
         <div className="abc">
           <div className="logo">
-            <img className="logo" src={Logo} alt="Logo123" />
+            <a href="/" target="_self">
+            <img className="logo" src={Logo} alt="Logo123"/>
+            </a>
+
           </div>
           <div className="search_bar">
             <input type="text" placeholder="What are you looking for?" />
@@ -33,7 +36,6 @@ const Layout = () => {
               <li>
                 <Link to="/list">List</Link>
               </li>
-              
             </ul>
           </div>
           <div className="icons">
