@@ -10,9 +10,8 @@ const Layout = () => {
         <div className="abc">
           <div className="logo">
             <a href="/" target="_self">
-            <img className="logo" src={Logo} alt="Logo123"/>
+              <img className="logo" src={Logo} alt="Logo123" />
             </a>
-
           </div>
           <div className="search_bar">
             <input type="text" placeholder="What are you looking for?" />
