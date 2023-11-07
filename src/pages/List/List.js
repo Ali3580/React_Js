@@ -32,6 +32,12 @@ function List() {
     setInputList(items[index]); // Set the input field value to the item being edited
   };
 
+  const handleKeyPress = (e) => {
+    if (e.key === "Enter") {
+      addItem();
+    }
+  };
+
   return (
     <div className="maindiv">
       <h1>ToDo List</h1>
@@ -45,6 +51,7 @@ function List() {
           type="text"
           placeholder="ADD ITEM"
           onChange={(e) => setInputList(e.target.value)}
+          onKeyPress={handleKeyPress} 
         />
         <button className="todo_button" onClick={addItem}>
           {editIndex !== null ? "+" : "+"}
@@ -58,6 +65,8 @@ function List() {
                   className="edit_input"
                   value={inputList}
                   onChange={(e) => setInputList(e.target.value)}
+                  onKeyPress={handleKeyPress} 
+
                 />
               ) : (
                 <li>{itemValue}</li>
