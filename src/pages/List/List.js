@@ -1,6 +1,5 @@
 import React, { useState } from "react";
 import "./List.css";
-import ToDoList from "../TodoList/TodoList";
 
 function List() {
   const [inputList, setInputList] = useState("");
